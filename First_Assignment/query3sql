@@ -1,0 +1,41 @@
+/*3. Negation
+Which courses (show the code) did not have service assigned in year 2003/2004?
+a. Use not in.
+b. Use external join and is not null.
+*/
+
+/*a*/
+select y_xucs.codigo from y_xucs
+inner join y_xocorrencias on y_xucs.codigo = y_xocorrencias.codigo
+inner join y_xtiposaula on y_xocorrencias.codigo = y_xtiposaula.codigo;
+where y_xucs.codigo not in
+(select codigo from y_xtiposaula
+where ano_letivo = '2003/2004');
+
+/*a */
+SELECT z_xucs.codigo 
+FROM   z_xucs 
+WHERE  z_xucs.codigo NOT IN (SELECT DISTINCT z_xtiposaula.codigo 
+                             FROM   z_xtiposaula 
+                             WHERE  z_xtiposaula.ano_letivo = '2003/2004'); 
+
+/*b*/
+
+CREATE VIEW courses_not_have_service_assigned_2003_2004_z
+AS 
+  SELECT * 
+  FROM   z_xtiposaula 
+  WHERE  z_xtiposaula.codigo NOT IN (SELECT DISTINCT z_xtiposaula.codigo 
+                                     FROM   z_xtiposaula 
+                                     WHERE  ano_letivo = '2003/2004'); 
+
+SELECT DISTINCT z_xucs.codigo, 
+                courses_not_have_service_assigned_2003_2004_z.ano_letivo 
+FROM   z_xucs 
+       LEFT OUTER JOIN courses_not_have_service_assigned_2003_2004_z 
+                    ON z_xucs.codigo = 
+       courses_not_have_service_assigned_2003_2004_z.codigo 
+WHERE  courses_not_have_service_assigned_2003_2004_z.ano_letivo IS NOT NULL; 
+
+
+

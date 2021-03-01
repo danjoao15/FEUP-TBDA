@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<LICS> 
+ <LIC>
+  <CODIGO>649</CODIGO>
+  <SIGLA>EMG</SIGLA>
+  <NOME>Engenharia de Minas e Geoambiente</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>255</CODIGO>
+  <SIGLA>EEC</SIGLA>
+  <NOME>Engenharia Electrotécnica e de Computadores</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>304</CODIGO>
+  <SIGLA>EM</SIGLA>
+  <NOME>Engenharia Mecânica</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>331</CODIGO>
+  <SIGLA>EQ</SIGLA>
+  <NOME>Engenharia Quimica</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>318</CODIGO>
+  <SIGLA>EMI</SIGLA>
+  <NOME>Engenharia de Minas</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>433</CODIGO>
+  <SIGLA>GEI</SIGLA>
+  <NOME>Gestão e Engenharia Industrial</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>315</CODIGO>
+  <SIGLA>EMM</SIGLA>
+  <NOME>Engenharia Metalúrgica e de Materiais</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>233</CODIGO>
+  <SIGLA>EC</SIGLA>
+  <NOME>Engenharia Civil</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>312</CODIGO>
+  <SIGLA>EMT</SIGLA>
+  <NOME>Engenharia Metalúrgica</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>275</CODIGO>
+  <SIGLA>EIC</SIGLA>
+  <NOME>Engenharia Informática e Computação</NOME>
+ </LIC>
+ <LIC>
+  <CODIGO>1093</CODIGO>
+  <SIGLA>CI</SIGLA>
+  <NOME>Ciência da Informação</NOME>
+ </LIC>
+</LICS>
